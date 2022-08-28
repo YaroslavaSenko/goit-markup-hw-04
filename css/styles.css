@@ -9,6 +9,8 @@
     --black-color: #000000;
     --black-color2: #212121;
     --pictures-color:#EEEEEE;
+    --cocial-color:#AFB1B8;
+    
     
 }
 
@@ -131,9 +133,7 @@ margin-left: auto;
     margin-left: 50px;
 
 }
-.item{
-    
-}
+
 .site-nav .item + .item{
     margin-left: 50px;
     
@@ -159,6 +159,39 @@ letter-spacing: 0.02em;
 .mail-nav:hover, .mail-nav:focus{
     color: var(--accent-color);
 }
+
+.mail-nav:hover .item-icon-mail,
+.mail-nav:focus .item-icon-mail{
+    fill: var(--accent-color);
+   }
+
+.tel-nav:hover, .tel-nav:focus{
+    color: var(--accent-color);
+}
+
+.tel-nav:hover .item-icon-tel,
+.tel-nav:focus .item-icon-tel{
+    fill: var(--accent-color);
+   }
+
+.item-icon-mail{
+width: 16px;
+height: 12px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+margin-right: 6px;
+fill: var(--primary-text-color);
+}
+.item-icon-tel{
+    width: 16px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+    }
 .tel-nav{    
     text-decoration: none;
     color: var(--primary-text-color);
@@ -166,6 +199,7 @@ letter-spacing: 0.02em;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+
      }
      
 .tel-nav:hover, .tel-nav:focus{
@@ -272,11 +306,27 @@ gap: 8px;
 
 .features{
     display: flex;
+    
 }
 .features-list + .features-list{
     margin-left: 30px;
 }
+
+.thumb{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-color3);
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+}
+
+
 .features-title{
+    margin-top: 30px;
     margin-bottom: 10px;
 color: var(--title-text-color);
 font-weight: 700;
@@ -364,6 +414,7 @@ color: var(--primary-text-color);
 }
 
 .title-team{
+    padding-top:  94px;
      color: var(--title-text-color);
     font-weight: 700;
 font-size: 36px;
@@ -380,8 +431,8 @@ letter-spacing: 0.03em;
 .team-images{
        
 background-color: var(--background-color);
-    border-radius: 0px 0px 4px 4px;
-    border-bottom: 1px solid;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
     
 }    
 .team-images + .team-images{
@@ -405,10 +456,74 @@ color: var(--title-text-color);
 font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
-
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
 }
+.social-list{
+    display:flex;
+    justify-content: center;
+    column-gap: 22px;
+    margin-top: 28px;
+    
+}
+.social-list-item{
+
+}
+.social-list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:var(--background-color)
+}
+.social-list-icon{
+    width: 20px;
+    height: 20px;
+   fill: var(--cocial-color);
+    }
+.social-list-link:hover, .social-list-link:focus{
+background-color: var(--accent-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+    fill: var(--background-color)
+    }
+
+    /* <!--Постійні клієнти--> */
+
+.client-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}   
+.client-list-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--cocial-color);
+    border-radius: 4px;
+} 
+.client-list-logo{
+    width: 106px;
+    height: 60px;
+    fill: var(--cocial-color);
+
+}
+.client-list-icon:hover,
+.client-list-icon:focus{
+    border: 1px solid var(--accent-color);
+}
+.client-list-icon:hover .client-list-logo,
+.client-list-icon:focus .client-list-logo{
+    fill: var(--accent-color);
+   }
+
 /* Підвал */
 .address{
     padding: 94px 0;
@@ -443,4 +558,24 @@ text-decoration: none;
 }
 .address-link:hover, .laddress-link:focus{
     color: var(--accent-color);
+}
+
+.cocial-links-footer-list{
+    
+   
+}
+.cocial-footer-title{
+    color: var(--background-color);
+}
+ .filter{
+    background:rgba(255, 255, 255, 0.1);
+    
+}
+.footer-conteiner{
+   display: flex;
+   align-items: baseline;
+}
+
+.conteiner-adress{
+    margin-right: 70px;
 }
